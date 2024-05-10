@@ -1,0 +1,28 @@
+{{ template "base" .}} {{ define "title" }}RPS web - Nuevo Juego {{ end }} {{
+define "content" }}
+<section class="container">
+  <div class="row justify-content-center">
+    <h2 class="text-center">Nuevo Juego</h2>
+    <form action="game" method="post" class="col-8 col-md-4 ">
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          id="inputName"
+          required
+          placeholder="ingrese su nombre"
+        />
+      </div>
+      <div class="d-grid gap-2">
+          <button 
+              type="submit" 
+              class="btn btn-primary btn-lg"
+          >
+              Empezar a jugar
+          </button>
+      </div>
+    </form>
+  </div>
+</section>
+{{end}}

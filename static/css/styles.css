@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+header {
+    grid-row: 1; 
+}
+#content {
+    grid-row: 2;
+}
+
+footer {
+    grid-row: 3;
+}
